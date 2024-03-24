@@ -1,0 +1,81 @@
+/*todos los elementos dentro de la pagina */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+/*fin los elementos dentro de la pagina */
+
+/*todos los elementos dentro del body */
+body{
+    text-align: center;
+    font-family: sans-serif;
+}
+/*fin elementos dentro del body*/
+
+/*pagina principal */
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*fin pagina principal */
+
+/*barra de navegacion*/
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 7rem;
+    background:rgb(6, 37, 122);
+    position: fixed;
+    width: 100%;
+    z-index: 100%;
+    
+}
+.navbar{
+    display: flex;
+    margin: 10px ;
+    
+}
+
+.logo {
+    display: flex;
+    margin: 0 15px 0 15px ;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a{
+    display: block;
+    padding: 20px 15px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    background: rgb(33, 212, 212);
+    border-radius: 40%;
+    margin: 0 2rem 0 3rem;
+    
+}
+
+.navbar a:hover{
+    color:white;
+}
+.search{
+    display: flex;
+    align-items: center;
+    margin-right:3rem ;
+}
+
+.head .logo_name{
+    color: white;
+    font-size: 2rem;
+}
+/*fin barra de navegacion*/
