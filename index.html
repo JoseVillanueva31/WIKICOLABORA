@@ -7,25 +7,33 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+    <!-- secciones de la pagina -->
+    <div>
+        <div class="logo">
+            <a href="#">logo</a>
+        </div>
+        <nav class="navbar">  <!---->
+        <a href="#">Diferencias con el resto</a>
+        <a href="#">Servicios</a>
+        <a href="#">Sobre Mi</a>
+        <a href="#">Contactos</a>
+        </nav>
+    </div>    
+    <!--termina secciones pagina-->
 
-    </header>
-    <nav>
-        <a href="">Diferencias con el resto</a>
-        <a href="">Servicios</a>
-        <a href="">Sobre Mi</a>
-        <a href="">Contactos</a>
-        <search>
+    <!--comienza todo lo relacionado con la barra de busqueda-->
+        <search class="search">
             <form action="">
                 <p>
-
+                    <!--box para escribir lo que se va a buscar-->
                     Busqueda: <input type="search" name="buqueda" size="10" maxlength="20">
-                
+                    <!--boton para confirmar la busqueda-->
                     <input type="submit" value="Buscar">
                 
                   </p>
             </form>
-            <datalist id="listabusqueda">
+            <!--lista de barra de busqueda -->
+            <datalist id="lista busqueda"> 
 
                 <option value="Diferencias">
               
@@ -37,24 +45,195 @@
               
               </datalist>
           </search>
-    </nav>
-    <section>
+    <!--TERMINA todo lo relacionado con la barra de busqueda-->
+    
+    <!--comienza header-->
+    <header class="content header"> 
         <img src="" alt="">
-        <h1>Bienvenido a WIKIColabora</h1>
+        <h1 class="tittle">Bienvenido a WIKIColabora</h1>
         <h4>Un mundo de ideas, una comunidad de colaboradores</h4>
-        <button>Ver Servicios</button>
-    </section>
-    <section>
-        <aside>
-            <img src="" alt="">
-            <h3>Comunidad dinamica e Interactividad comunitaria</h3>
-            <p>Wiki Colabora crea un espacio en línea donde personas con intereses en tecnología pueden reunirse para compartir ideas,
-                 experiencias y recursos.</p>
-        </aside>
-    </section>
+        <div class="btn-home">
+            <a href="" class="btn"></a>
+        </div>
+    </header>
+    <!--fin termina header-->  
 
+    <!--comienza diferencia con el resto-->
+    <section class="content diferencias con el resto">
+        <div class="logo_dcr">
+            <a href="#">logo</a>
+        </div>
+        <aside class="box_dcr">
+            <img src="" alt="">
+            <h3 class="title">Comunidad dinamica e Interactividad comunitaria</h3>
+            <p>Wiki Colabora crea un espacio en línea donde personas con intereses en tecnología pueden
+                 reunirse para compartir ideas,<br>
+                 experiencias y recursos. 
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cum quas provident, praesentium aut, eaque eligendi enim aliquid nam totam modi delectus expedita fugiat non dignissimos incidunt.
+                  Ab est consequatur nostrum!</p>
+        </aside>
+
+    </section>
+    <!--fin diferencia con el resto-->
+       
+    <!--nuestros servicios-->
+    <section class="nuestros servicios">
+        <h3>Nuestros Servicios</h3>
+
+        <div class="box_container">
+            <div class="box">
+                <img class="ns_img" src="" alt="">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Nobis quod voluptates hic perferendis quaerat voluptatum culpa vitae rerum similique sunt velit 
+                </p>
+            </div>
+
+            <div class="box">
+                <img class="ns_img" src="" alt="">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Nobis quod voluptates hic perferendis quaerat voluptatum culpa vitae rerum similique sunt velit 
+                </p>
+            </div>
+
+            <div class="box">
+                <img class="ns_img" src="" alt="">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Nobis quod voluptates hic perferendis quaerat voluptatum culpa vitae rerum similique sunt velit 
+                </p>
+            </div>
+        </div>
+        <img class="container_img"  src="" alt="">
+    </section>
+    <!--fin nuestros servicios-->
+
+    <!--comienza que es wiki colabora-->
+    <section class="wikicolabora">
+        <img class="w_img" src="" alt="">
+
+        <h3 class="title">¿que es WIKIColabora?</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Corporis, dolorem.
+             Illum, repellendus totam dicta nisi
+              animi ad sunt possimus minus eius?
+               Eveniet voluptates tempora placea
+               t temporibus? Voluptas quia est eligendi.
+            </p>
+    </section>
+    <!--fin que es wiki colabora-->
+        
+    <!--comienza colecciones-->
+    <section class="colecciones">
+        <article class="contain">
+            <img class="w_img" src="" alt="">
+            <p> adipisicing elit. 
+                Corporis, dolorem.
+                 Illum, repellendus <br>
+                 totam dicta nisi
+            </p>
+        </article>
+        <article class="contain">
+            <img class="w_img" src="" alt="">
+            <p>adipisicing elit. 
+                Corporis, dolorem.
+                 Illum, repellendus <br>
+                 totam dicta nisi
+            </p>
+        </article>
+        <article class="contain">
+            <img class="w_img" src="" alt="">
+            <p> adipisicing elit. 
+                Corporis, dolorem.
+                 Illum, repellendus <br>
+                 totam dicta nisi
+            </p>
+        </article>
+    </section>
+    <!--fin colecciones-->
+
+    <!--comienza reseñas-->
+    <section>
+        <h2 class="title">reseñas</h2>
+
+        <article class="contain">
+            <img class="r_img" src="" alt="">
+            <p> adipisicing elit. 
+                Corporis, dolorem.
+                 Illum, repellendus <br>
+                 totam dicta nisi
+            </p>
+        </article>
+
+        <article class="contain">
+            <img class="r_img" src="" alt="">
+            <p> adipisicing elit. 
+                Corporis, dolorem.
+                 Illum, repellendus <br>
+                 totam dicta nisi
+            </p>
+        </article>
+
+        <article class="contain">
+            <img class="r_img" src="" alt="">
+            <p> adipisicing elit. 
+                Corporis, dolorem.
+                 Illum, repellendus <br>
+                 totam dicta nisi
+            </p>
+        </article>
+    </section>
+    <!--fin reseñas-->
+
+    <!--comienza contactos-->
+    <section class="contactos">
+        <div class="contactos_box">
+            <h2 class="title">Contactos</h2>
+            <p>
+                direccion: <br> las luciernagas 8080, macul <br>
+                region metropolitana
+            </p>
+
+            <p>
+                telefonos: <br> 9 7575 8585 - 9 8585 7575
+                
+            </p>
+
+            <p>
+                Email: <br> wikicolabora@gmail.com
+            </p>
+        </div>
+    </section>
+    <!--fin contactos-->
+
+    <!--comienza pie de pagina-->
     <footer>
+        <div class="container_footer">
+            <div class="contain_footer">
+                <img class="f_img" src="" alt="">
+                <h6>red social</h6>
+            </div>
+
+            <div class="contain_footer">
+                <img class="f_img" src="" alt="">
+                <h6>red social</h6>
+            </div>
+
+            <div class="contain_footer">
+                <img class="f_img" src="" alt="">
+                <h6>red social</h6>
+            </div>
+
+            <div class="contain_footer">
+                <img class="f_img" src="" alt="">
+                <h6>red social</h6>
+            </div>
+        </div>
       Derechos reservados por <b>WIKIColabora</b>
     </footer>
+    <!--fin pie de pagina-->
+
 </body>
 </html>
