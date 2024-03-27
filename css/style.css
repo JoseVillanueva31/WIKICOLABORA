@@ -1,78 +1,168 @@
-/*todos los elementos dentro de la pagina */
 *{
     margin: 0;
     padding: 0;
-    border: 0;
-    vertical-align: baseline;
-}
-/*fin los elementos dentro de la pagina */
+    box-sizing: border-box;;
 
-/*todos los elementos dentro del body */
+}
+
+
+
 body{
     text-align: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-/*fin elementos dentro del body*/
 
-/*pagina principal */
-.header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-top: 100px
 }
-/*fin pagina principal */
 
-/*barra de navegacion*/
 .head{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100px;
-    background:rgb(160, 145, 14);
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    z-index: 10;
+    top: 0;left: 0;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 4);
+    background: linear-gradient(45deg, #000033, #000080, #0000b3, #000033);
+    background-size: 400% 400%;
     position: fixed;
     width: 100%;
     z-index: 100%;
-    
-}
-.navbar{
-    display: flex;
-    margin: 10px ;  
-}
-
-.logo {
-    display: flex;
-    margin: 0 15px 0 15px ;
-}
-.logo a{
-    text-decoration: none;
+    animation: Gradient 12s ease-in-out infinite;
     color: white;
-    text-transform: uppercase;
-    font-size: 20px;
+
+
 }
 
-.navbar a{
-    display: block;
-    padding: 20px 15px;
-    color: rgb(0, 0, 0);
+@keyframes Gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container .btn-menu, .logo{
+    float: left;
+    line-height: 75px;
+}
+
+.logo h1 {
+
+    color: white;
+    font-weight: 400;
+    font-size: 22px;
+    margin-left: 10px;
+
+}
+
+
+.menu{
+    float: right;
+    line-height: 75px;
+}
+
+.menu a{
+    color: white;
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: 20px;
-    background: rgb(99, 212, 33);
-    border-radius: 20%;
-    margin: 0 2rem 0 3rem;
-    
+    display: inline-block;
+    padding: 10px 15px;
+    line-height: normal;
+    font-size: 14px;
+    transition: all 500ms ease;
+
 }
 
-.navbar a:hover{
-    color:rgb(236, 9, 9);
-}
-.search{
-    display: flex;
-    align-items: center;
+.menu a:hover{
+    color: #000000;
+
+
 }
 
-.head .logo_name{
-    color: rgb(126, 10, 78);
-    font-size: 2rem;
+
+
+.search {
+    position: absolute;
+    top: 20px;
+    left: 900px;
+
 }
-/*fin barra de navegacion*/
+
+
+
+.btn-menu{
+
+float: left;
+line-height: 70px;
+
+
+}
+
+
+.btn-menu label{
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+/*MENU LATERAL*/
+
+#btn-menu{
+    display: none;
+}
+.container-menu{
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 20;
+}
+#btn-menu:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.cont-menu{
+    width: 100%;
+    max-width: 250px;
+    background: #1c1c1c;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+#btn-menu:checked ~ .container-menu .cont-menu{
+    transform: translateX(0%);
+}
+.cont-menu nav{
+    transform: translateY(15%);
+}
+.cont-menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+    border-left: 5px solid #c7c7c7;
+    background: #1f1f1f;
+}
+.cont-menu label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
