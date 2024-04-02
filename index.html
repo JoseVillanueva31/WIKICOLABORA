@@ -3,116 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>WIKIColabora</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+
     <!-- secciones de la pagina -->
     <div class="head">
-        <nav class="navbar">  <!---->
-        <a href="www.google.com">Diferencias<br>con el resto</a>
-        <a href="#">Servicios</a>
+        <!-- Navegación -->
+        <div class = "container">
 
-        <div class="logo">
-            <h3 class="logo_name">WIKI<br>Colabora
-            </h3>
-        </div>
-        
-        <a href="#">Sobre Mi</a>
-        <a href="#">Contactos</a>
-        <!--barra de busqueda-->
-        <search class="search">
-            <form action="">
-                <p>
-                    <!--box para escribir lo que se va a buscar-->
-                     <input type="search" name="buqueda" size="10" maxlength="20">
-                    <!--boton para confirmar la busqueda-->
-                    <input type="submit" value="Buscar">
-                
-                  </p>
-            </form>
-          </search>
-        </nav>
-    </div>    
-    <!--termina secciones pagina-->
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#" class="logo">
+                    <span>wiki</span>colabora</a>
+            </div>
+
+            <nav class="menu">
+                <a href="diferencias.html">diferencias</a>
+                <a href="servicios.html">servicios</a>
+                <a href="sobremi.html">sobre Mi</a>
+                <a href="contactos.html">contactos</a>
+            </nav>        
+        </div>   
+    </div>
+    
+    <!--fin secciones pagina-->
 
     <!--comienza header-->
-    <header class="content header"> 
-        <img src="" alt="">
-        <h1 class="tittle">Bienvenido a WIKIColabora</h1>
+    <header class="content_header"> 
+        <img src="img/a.webps" alt="">
+        <h2 class="tittle">Bienvenido a WIKIColabora</h2>
         <h4>Un mundo de ideas, una comunidad de colaboradores</h4>
         <div class="btn-home">
             <a href="" class="btn"></a>
         </div>
     </header>
+    
     <!--fin termina header-->  
-
-    <!--comienza diferencia con el resto-->
-    <section class="content diferencias con el resto">
-        <div class="logo_dcr">
-            <a href="#">logo</a>
-        </div>
-        <aside class="box_dcr">
-            <img src="" alt="">
-            <h3 class="title">Comunidad dinamica e Interactividad comunitaria</h3>
-            <p>Wiki Colabora crea un espacio en línea donde personas con intereses en tecnología pueden
-                 reunirse para compartir ideas,<br>
-                 experiencias y recursos. 
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Cum quas provident, praesentium aut, eaque eligendi enim aliquid nam totam modi delectus expedita fugiat non dignissimos incidunt.
-                  Ab est consequatur nostrum!</p>
-        </aside>
-
-    </section>
-    <!--fin diferencia con el resto-->
-       
-    <!--nuestros servicios-->
-    <section class="nuestros servicios">
-        <h3>Nuestros Servicios</h3>
-
-        <div class="box_container">
-            <div class="box">
-                <img class="ns_img" src="" alt="">
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Nobis quod voluptates hic perferendis quaerat voluptatum culpa vitae rerum similique sunt velit 
-                </p>
-            </div>
-
-            <div class="box">
-                <img class="ns_img" src="" alt="">
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Nobis quod voluptates hic perferendis quaerat voluptatum culpa vitae rerum similique sunt velit 
-                </p>
-            </div>
-
-            <div class="box">
-                <img class="ns_img" src="" alt="">
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Nobis quod voluptates hic perferendis quaerat voluptatum culpa vitae rerum similique sunt velit 
-                </p>
-            </div>
-        </div>
-        <img class="container_img"  src="" alt="">
-    </section>
-    <!--fin nuestros servicios-->
-
-    <!--comienza que es wiki colabora-->
-    <section class="wikicolabora">
-        <img class="w_img" src="" alt="">
-
-        <h3 class="title">¿que es WIKIColabora?</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Corporis, dolorem.
-             Illum, repellendus totam dicta nisi
-              animi ad sunt possimus minus eius?
-               Eveniet voluptates tempora placea
-               t temporibus? Voluptas quia est eligendi.
-            </p>
-    </section>
-    <!--fin que es wiki colabora-->
         
     <!--comienza colecciones-->
     <section class="colecciones">
@@ -176,26 +106,6 @@
     </section>
     <!--fin reseñas-->
 
-    <!--comienza contactos-->
-    <section class="contactos">
-        <div class="contactos_box">
-            <h2 class="title">Contactos</h2>
-            <p>
-                direccion: <br> las luciernagas 8080, macul <br>
-                region metropolitana
-            </p>
-
-            <p>
-                telefonos: <br> 9 7575 8585 - 9 8585 7575
-                
-            </p>
-
-            <p>
-                Email: <br> wikicolabora@gmail.com
-            </p>
-        </div>
-    </section>
-    <!--fin contactos-->
 
     <!--comienza pie de pagina-->
     <footer>
@@ -223,6 +133,20 @@
       Derechos reservados por <b>WIKIColabora</b>
     </footer>
     <!--fin pie de pagina-->
+
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+            </nav>
+            <label for="btn-menu">✖️</label>
+        </div>
+    </div>
 
 </body>
 </html>
