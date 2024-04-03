@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+:root{
+    --verde:#0c443a;
+    --limon:#25d1b2;
+    --degradado:linear-gradient(90deg, var(--limon),var(--verde));
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 100px;
+    background: gainsboro;
+}
+.head{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    z-index: 10;
+    top: 0;left: 0;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 4);
+    background: linear-gradient(45deg, #1a7480, #089ca1, #09d6cc, #02e8f8);
+    background-size: 400% 400%;
+    position: fixed;
+    width: 100%;
+    z-index: 100%;
+    animation: Gradient 12s ease-in-out infinite;
+    color: white;
+    text-transform: uppercase;
+
+
+}
+
+@keyframes Gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+
+.head .logo{
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+}
+
+.head .logo span{
+    color: var(--limon);
+}
+
+.head .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container .btn-menu, .logo{
+    float: left;
+    line-height: 75px;
+}
+
+
+.head .container .menu{
+    float: right;
+    line-height: 75px;
+}
+
+.head .container .menu a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem 2.2rem;
+    line-height: normal;
+    font-size: 1rem;
+    transition: all 500ms ease;
+
+}
+
+.content_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+}
+
+.content_header .tittle{
+    color: var(--verde);
+    font-size: 5rem;
+    box-shadow: var(--degradado);
+    margin-top: 2.5rem;
+}
+
+.content_header h4{
+    margin-top:3rem ;
+    font-size: 2rem;
+    color: var(--limon);
+    padding: 2%;
+    background-color: var(--verde);
+}
+
+.content_header .descripcion p{
+    margin: 2rem;
+    font-size: 1.5rem;
+    margin: 3%;
+    padding: 5%;
+    background-color: var(--limon);
+    border-radius: 2%;    
+
+}
+
+
+.pie_de_pag .container_footer{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+.ejemplo .e_1 .e_2{
+    font-size: 1.2rem;
+    border: 0 20px 0 20px;
+}
+/*--------------------------*/
+
+.s4{
+    background-color:#181a1b;
+    width: 100%;
+    height: 12rem;
+    display: flex;
+    flex-direction:row;
+    padding: 5% 0;
+}
+
+.s4_nav{
+    width: 40%;
+    height: 50px;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+
+    
+}
+
+.s4_nav a{
+    text-decoration: none;
+    color: rgb(124, 124, 124);
+    font-size: 18px;
+    font-weight: 100;
+    padding: 30px 50px;
+
+}
+
+.s4_nav a:hover{
+    color: rgb(255, 244, 244);  
+
+    
+}
+
+.s4 footer{
+    color: rgb(124, 124, 124);
+    display: flex;
+    justify-content:center;
+    align-items: start;
+    flex-direction: row;
+    
+    
+}
+.wrapper {
+    display: inline-flex;
+    list-style: none;
+    height: 120px;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+  }
+  .wrapper .icon {
+    position: relative;
+    background: #d1c9c9;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wrapper .facebook:hover,
+  .wrapper .facebook:hover .tooltip,
+  .wrapper .facebook:hover .tooltip::before {
+    background: #1877F2;
+    color: #fff;
+  }
+  
+  .wrapper .twitter:hover,
+  .wrapper .twitter:hover .tooltip,
+  .wrapper .twitter:hover .tooltip::before {
+    background: #1DA1F2;
+    color: #fff;
+  }
+  
+  .wrapper .instagram:hover,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip::before {
+    background: #E4405F;
+    color: #fff;
+  }
+  
+  .s4 .S3_redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .s4 footer{
+    text-decoration: none;
+    color: white;
+  }
