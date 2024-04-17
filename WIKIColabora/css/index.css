@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
 
 :root{
+    --negro:#000;
+    --blanco:#fff;
     --verde:#0c443a;
     --limon:#25d1b2;
     --degradado:linear-gradient(90deg, var(--limon),var(--verde));
@@ -27,7 +29,7 @@ body{
     height: 70px;
     top: 0;left: 0;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 4);
-    background: linear-gradient(45deg, #000033, #000080, #0000b3, #000033);
+    background: linear-gradient(45deg, #0f365c, #000080, #0012b6, #0030b3);
     background-size: 400% 400%;
     position: fixed;
     width: 100%;
@@ -197,9 +199,18 @@ line-height: 70px;
     filter: brightness(0.6);   
 }
 
-
+/*tammaño de las imagenes de las cards*/
 
 .card-group .card{
-    background-color:var(--verde);
+    background-color:var(--blanco);
 }
+
+
+.card-group .card img{
+    width: 100%;
+    height: 22.5rem;
+}
+
+
+
 
