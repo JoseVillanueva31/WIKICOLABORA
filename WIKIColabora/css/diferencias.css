@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+:root {
+    --verde: #0c443a;
+    --limon: #25d1b2;
+    --degradado: linear-gradient(90deg, var(--limon), var(--verde));
+}
+
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body{
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+}
+
+ol{
+    list-style: none;
+}
+/*BARRA DE NAVEGACION*/
+.head {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    z-index: 10;
+    box-shadow: none;
+    background: linear-gradient(45deg, #101010, #171717, #515170, #4a5a61);
+    background-size: 400% 400%;
+    position: fixed;
+    width: 100%;
+    z-index: 100%;
+    animation: Gradient 12s ease-in-out infinite;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+
+
+}
+
+
+.head .logo {
+    font-size: 3rem;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.head .logo span {
+    color: var(--limon);
+}
+
+.logo {
+    float: left;
+    line-height: 75px;
+}
+
+.logo h1 {
+
+    color: var(--limon);
+    font-weight: 400;
+    font-size: 22px;
+    margin-left: 10px;
+
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+
+.menu {
+    float: right;
+    line-height: 75px;
+}
+
+.menu a {
+    color: var(--limon);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
+    line-height: normal;
+    font-size: 1.1rem;
+    transition: all 500ms ease;
+
+}
+
+/* hover de los lementos del navbar */
+.menu a:hover {
+    color: #fff;
+}
+
+/**/
+/*SECCIONES*/
+/*contenido principal*/
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    height: 65vh !important;
+    background: url(../img/dheader.jpg) no-repeat center;
+    background-size: cover;
+}
+/*background semitraprante de elemntos principales*/
+.texto-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0,0,0,0.5);
+    padding: 80px 0;
+    font-weight: 500;
+
+
+}
+
+.titulo {
+    margin-bottom:40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+p {
+    margin-bottom: 50px;
+    font-size: 22px;
+    color: #fff;
+    padding: 0 100px;
+}
+
+.boton-home{
+    display: flex;
+    align-items: center center;
+}
+
+/*todos los botones*/
+.boton {
+    display: inline-block;
+    margin-top: 15px;
+    padding:15px 45px;
+    border: 2px solid var(--limon);
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    background: var(--limon);
+}
+
+.boton:hover {
+    background: none;
+}
+
+.boton-home {
+    display: flex;
+}
+
+.boton-home a{
+    margin: 0 10px;
+}
+
+/*SECCION 1*/
+.contenido {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sau {
+    padding: 30px;
+    background: #1f1d1d
+}
+
+
+.caja-contenedora {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.caja-contenedora .caja {
+    height: 11rem;
+    width: 17rem;
+    background: #101010;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0.3rem 5rem ☐ rgba(0, 0, 0, .5);
+    margin: 2rem;
+}
+
+.caja-contenedora .caja i{
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: var(--verde);
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.caja-contenedora .caja h3{
+    font-size: 20px;
+    color: var(--limon)
+}
+
+.caja-contenedora .caja p {
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.dos{
+    height: 70vh !important;
+    background-color:#171717;
+}
+
+.dos .texto-centro{
+    width: 80%;
+
+}
+
+.tres{
+    height: 65vh !important;
+    background:url(../img/dsection3.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.cuatro{
+    height: 80vh !important;
+    background-color: #171717;
+    padding-bottom: 0;
+}
+
+.cuatro img{
+    width: 760px;
+    height: 700px;
+    padding-bottom: 2rem;
+}
+/*pie de pagina footer*/
+.contactos{
+    position: absolute;
+    background:#000000;
+    margin-bottom:0;
+    width: 100%;
+}
+
+
+
+@media only screen and (max-width: 1080px) {
+    .titulo{
+    margin-bottom: 0;
+    font-size: 40px;
+    }
+    .sau {
+        height: 100vh;
+    
+    }
+    
+    .navbar{
+    display: none;
+  }
+
+  .dos .texto-centro{
+    width: 100%;
+    height:100vh !important;
+  }
+  p{
+    font-size: 15px;
+    
+  }
+
+  .head{
+    height: 12vh;
+  }
+
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .titulo{
+    margin-bottom: 0;
+    font-size: 40px;
+    }
+    .sau {
+        height: 100vh;
+    
+    }
+    
+    .navbar{
+    display: none;
+  }
+
+  .dos .texto-centro{
+    width: 100%;
+    height:100vh !important;
+  }
+  p{
+    font-size: 15px;
+    
+  }
+
+  .head{
+    height: 12vh;
+  }
+
+    
+}
+
