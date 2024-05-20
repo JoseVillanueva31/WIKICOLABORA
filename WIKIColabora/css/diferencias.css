@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
 
 :root {
+    --rosa:#ff66cc;
     --verde: #0c443a;
     --limon: #25d1b2;
     --degradado: linear-gradient(90deg, var(--limon), var(--verde));
@@ -9,14 +10,14 @@
 *{
     border: 0;
     margin: 0;
-    padding: 0;
     font-size: 100%;
     vertical-align: baseline;
 }
 
-body{
-    text-align: center;
-    font-family: 'poppins', sans-serif;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
 }
 
 ol{
@@ -41,28 +42,24 @@ ol{
 
 }
 
-
-.head .logo {
-    font-size: 3rem;
-    color: whitesmoke;
-    text-decoration: none;
+.wiki {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    font-family: 'Impact', sans-serif;
+    letter-spacing: 2px;
+    display: inline-block;
 }
 
-.head .logo span {
-    color: var(--limon);
-}
 
-.logo {
-    float: left;
-    line-height: 75px;
-}
-
-.logo h1 {
-
-    color: var(--limon);
-    font-weight: 400;
-    font-size: 22px;
-    margin-left: 10px;
+.colabora {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff66cc;
+    display: inline-block;
+    font-family: 'Impact', sans-serif;
+    margin-left: 5px;
 
 }
 .container {
@@ -70,21 +67,26 @@ ol{
     max-width: 1200px;
     margin: auto;
 }
-
-
-
+/*ubicacion de los elemtentos en el contenedor en este caso 3 elementos*/
+.container .btn-menu,
+.logo {
+    float: left;
+    line-height: 75px;
+}
+/*---------------------------*/
+/*ubicacion en el contenedor entes caso elementos a*/
 .menu {
     float: right;
     line-height: 75px;
 }
-
+/*---------------------------*/
 .menu a {
     color: var(--limon);
     text-decoration: none;
     display: inline-block;
     padding: 10px 15px;
     line-height: normal;
-    font-size: 1.1rem;
+    font-size: 1rem;
     transition: all 500ms ease;
 
 }
@@ -115,11 +117,10 @@ ol{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background-color: rgb(0,0,0,0.5);
     padding: 80px 0;
     font-weight: 500;
-
-
 }
 
 .titulo {
@@ -130,12 +131,12 @@ ol{
     color: #fff;
 }
 
-
 p {
-    margin-bottom: 50px;
-    font-size: 22px;
+    margin-top: 0px;
+    margin-bottom: 1rem;
+    font-size: 15px;
     color: #fff;
-    padding: 0 100px;
+    padding: 0 100px;margin-bottom: 2rem;
 }
 
 .boton-home{
@@ -153,10 +154,12 @@ p {
     font-size: 1rem;
     text-decoration: none;
     background: var(--limon);
+    color:var(--verde);
 }
 
 .boton:hover {
     background: none;
+    color:var(--limon);
 }
 
 .boton-home {
@@ -192,7 +195,7 @@ p {
 .caja-contenedora .caja {
     height: 11rem;
     width: 17rem;
-    background: #101010;
+    background: var(--verde);
     text-align: center;
     border-radius: 1rem;
     box-shadow: 0.3rem 5rem ☐ rgba(0, 0, 0, .5);
@@ -205,8 +208,8 @@ p {
     line-height: 3rem;
     text-align: center;
     border-radius: 50%;
-    color: #fff;
-    background: var(--verde);
+    color:var(--verde);
+    background: var(--limon);
     font-size: 2rem;
     margin: 1rem 0;
 }
@@ -228,6 +231,7 @@ p {
 
 .dos .texto-centro{
     width: 80%;
+    text-align: center;
 
 }
 
@@ -250,73 +254,14 @@ p {
     height: 700px;
     padding-bottom: 2rem;
 }
-/*pie de pagina footer*/
-.contactos{
-    position: absolute;
-    background:#000000;
-    margin-bottom:0;
+
+
+
+.contactos {
+    display: flex;
+    justify-content: space-around;
+    background: #000000;
+    color: #ffffff;
     width: 100%;
-}
-
-
-
-@media only screen and (max-width: 1080px) {
-    .titulo{
-    margin-bottom: 0;
-    font-size: 40px;
-    }
-    .sau {
-        height: 100vh;
-    
-    }
-    
-    .navbar{
-    display: none;
-  }
-
-  .dos .texto-centro{
-    width: 100%;
-    height:100vh !important;
-  }
-  p{
-    font-size: 15px;
-    
-  }
-
-  .head{
-    height: 12vh;
-  }
-
-    
-}
-
-@media only screen and (max-width: 768px) {
-    .titulo{
-    margin-bottom: 0;
-    font-size: 40px;
-    }
-    .sau {
-        height: 100vh;
-    
-    }
-    
-    .navbar{
-    display: none;
-  }
-
-  .dos .texto-centro{
-    width: 100%;
-    height:100vh !important;
-  }
-  p{
-    font-size: 15px;
-    
-  }
-
-  .head{
-    height: 12vh;
-  }
-
-    
 }
 
